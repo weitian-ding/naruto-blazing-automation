@@ -1,17 +1,31 @@
-
 while 1: 
-    wait("1501346151543.png", 10)
+   
+    wait("1501397710908.png", 20)
     
-    doubleClick("1501346151543.png")
-    wait("1501346228539.png", 30)
-    click("1501346228539.png")
+    doubleClick("1501397710908.png")
+    wait(Pattern("1501397774299.png").similar(0.80), 120)
+    click("1501397774299.png")
     
-    wait(Pattern("1501346620416.png").similar(0.30), 300)
-    doubleClick(Pattern("1501346620416.png").similar(0.30))
-    wait("1501346685927.png", 10)
-    doubleClick("1501346702300.png")
-    wait("1501346821874.png", 10)
-    click("1501346821874.png")
-    wait("1501346890146.png", 10)
-    doubleClick("1501346907635.png")
+    wait(Pattern("1501397974355.png").similar(0.50), 900)
+    doubleClick(Pattern("1501397974355.png").similar(0.50))
+    wait(Pattern("1501398033620.png").similar(0.85), 20)
+    doubleClick("1501398033620.png")
+    wait(20)
+    if exists(Pattern("1501398033620.png").similar(0.85)):
+        doubleClick(Pattern("1501398033620.png").similar(0.85))
+    wait("1501398061521.png", 20)
+    click("1501398061521.png")
+    wait("1501398090920.png", 20)
+    doubleClick("1501398090920.png")
+    while exists(Pattern("1501399449365.png").targetOffset(60,80)):
+        doubleClick(Pattern("1501399449365.png").targetOffset(60,80))
+        wait(10)
+        while exists("1501649717261.png"):
+      
+            doubleClick(Pattern("1501649717261.png").targetOffset(-9,-1))
+            wait(10)
+        wait(5)
+        #wait("1501398090920.png", 20)  
+        #doubleClick("1501398090920.png")
+   
     
