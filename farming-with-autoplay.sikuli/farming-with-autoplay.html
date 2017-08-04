@@ -82,6 +82,9 @@
     <span class="skw">doubleClick</span>(Pattern(<img src="1501397974355.png" />).similar(<span class="dig">0.50</span>))
     <span class="skw">wait</span>(Pattern(<img src="1501398033620.png" />).similar(<span class="dig">0.85</span>), <span class="dig">20</span>)
     <span class="skw">doubleClick</span>(<img src="1501398033620.png" />)
+
+
+    <span class="cmt"># wait for another next in LB trials  </span>
     <span class="skw">wait</span>(<span class="dig">20</span>)
     <span class="kw">if</span> exists(Pattern(<img src="1501398033620.png" />).similar(<span class="dig">0.85</span>)):
         <span class="skw">doubleClick</span>(Pattern(<img src="1501398033620.png" />).similar(<span class="dig">0.85</span>))
@@ -89,6 +92,9 @@
     <span class="skw">click</span>(<img src="1501398061521.png" />)
     <span class="skw">wait</span>(<img src="1501398090920.png" />, <span class="dig">20</span>)
     <span class="skw">doubleClick</span>(<img src="1501398090920.png" />)
+
+
+    <span class="cmt"># refill stamina if needed</span>
     <span class="kw">while</span> exists(Pattern(<img src="1501399449365.png" />).targetOffset(<span class="dig">60</span>,<span class="dig">80</span>)):
         <span class="skw">doubleClick</span>(Pattern(<img src="1501399449365.png" />).targetOffset(<span class="dig">60</span>,<span class="dig">80</span>))
         <span class="skw">wait</span>(<span class="dig">10</span>)
@@ -96,10 +102,13 @@
 
             <span class="skw">doubleClick</span>(Pattern(<img src="1501649717261.png" />).targetOffset(-<span class="dig">9</span>,-<span class="dig">1</span>))
             <span class="skw">wait</span>(<span class="dig">10</span>)
-        <span class="skw">wait</span>(<span class="dig">5</span>)
-        <span class="cmt">#wait("1501398090920.png", 20)  </span>
-        <span class="cmt">#doubleClick("1501398090920.png")</span>
 
+
+    <span class="cmt"># check for level up stamina refill</span>
+    <span class="skw">wait</span>(<span class="dig">10</span>)
+    <span class="kw">if</span> exists(<img src="1501834764766.png" />):
+        <span class="skw">doubleClick</span>(<img src="1501834780905.png" />)
+        <span class="skw">doubleClick</span>(<img src="1501834963337.png" />)
 </pre>
 </body>
 </html>
